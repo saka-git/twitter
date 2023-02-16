@@ -45,7 +45,7 @@ python demo.py
 
 作成情報を列挙する
 
--   作成者
+-   作成者 aaa
 -   所属
 -   E-mail
 

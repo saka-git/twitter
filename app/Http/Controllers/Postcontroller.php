@@ -15,7 +15,14 @@ class Postcontroller extends Controller
         return view('posts.index', compact('posts'));
     }
 
-    // 作成ページ
+    /**
+     * 作成ページ
+     * @version 1.0.0
+     * @author
+     * @link
+     * @param 
+     * @return view
+     */
     public function create() {
         return view('posts.create');
     }
@@ -52,7 +59,7 @@ class Postcontroller extends Controller
     // 削除機能
     public function destroy(Post $post) {
         $post->delete();
-
+        
         return redirect()->route('posts.index')->with('flash_message', '投稿を削除しました。');
     }
     
